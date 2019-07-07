@@ -1,11 +1,21 @@
 <template>
-    <h1>Cinema</h1>
+  <div id="main">
+    <Header title="喵喵影院"/>
+    <TabBar/>
+  </div>
 </template>
 
 <script>
-    export default {
-        name: "cinema"
+  import  Header from '@/components/Header';
+  import  TabBar from '@/components/TabBar';
+
+  export default {
+    name: 'cinema',
+    components: {
+      TabBar,
+      Header
     }
+  }
 </script>
 
 <style scoped>
